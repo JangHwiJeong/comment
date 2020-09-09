@@ -1,13 +1,15 @@
 @import "reset.css";
 /* FONT */
+
 @font-face {
-  font-family: "CookieRunOTF-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
-    format("woff");
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+          
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
 
 .notosanskr * {
   font-family: "Noto Sans KR", sans-serif;
@@ -23,7 +25,7 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: "Noto Sans KR", sans-serif;
-  background-color: #ebf0f1;
+  background-color: #ffffff;
 }
 
 /* header */
@@ -33,15 +35,15 @@ header {
   flex-direction: row;
   width: 100%;
   height: 10%;
-  background-color: #092e20;
-  color: white;
+  background-color: #006ad7;
+  color: #ffffff;
 }
 
 header h1 {
   display: inline-block;
   padding: 10px;
   margin: 10px;
-  font-family: "CookieRunOTF-Bold";
+  font-family: 'LAB디지털';
 }
 header a {
   all: unset;
@@ -56,13 +58,13 @@ header .dslion {
 }
 /* section*/
 section {
-  width: 70%;
+  width: 65%;
 }
 
 /* footer */
 
 footer {
-  background-color: #44b78b;
+  background-color: #21277b;
   width: 100%;
   display: flex;
   align-items: center;
@@ -71,19 +73,21 @@ footer {
 }
 footer p {
   font-size: 8pt;
-  color: #ebf0f1;
+  color: #ffffff;
 }
 
 /* 공통 요소 */
 
 h3 {
-  color: #0c4b33;
+  color: #21277b;
   font-size: 2rem;
+  align-items: center;
+  font-family: 'LAB디지털';
 }
 
 .date {
   font-size: 9pt;
-  color: gray;
+  color: #8cc3de;
 }
 
 /* home.html */
@@ -91,7 +95,7 @@ h3 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px dashed #092e20;
+  border: 2px dashed #21277b;
   margin: 1em 1em;
 }
 
@@ -102,21 +106,21 @@ h3 {
 }
 .home a {
   all: unset;
-  color: #0c4b33;
-  font-size: 2rem;
+  color: #21277b;
+  font-size: 3rem;
   cursor: pointer;
 }
 
 .preview {
   font-size: 9pt;
-  color: gray;
+  color: #8cc3de;
   margin-bottom: 0px;
 }
 
 /* create.html */
 #id_title,
 #id_body {
-  background: none;
+  background-color: none;
   appearance: none;
   border: 0;
   color: black;
@@ -125,7 +129,7 @@ h3 {
 }
 
 #id_title {
-  font-size: 20px;
+  font-size: 25px;
   align-items: center;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -150,19 +154,20 @@ h3 {
 }
 .btn a {
   all: unset;
-  color: gray;
+  color: #006ad7;
   margin: 1rem;
   cursor: pointer;
   font-weight: bolder;
 }
 .btn a:hover {
-  color: #44b78b;
+  color: #8cc3de;
 }
 
 .detail p {
   margin: 1em;
   word-break: break-all;
 }
+
 
 /* create.html update.html */
 form {
@@ -173,14 +178,14 @@ form {
 
 input {
   background-color: white;
-  color: #44b78b;
-  border: 1px solid #44b78b;
+  color: #006ad7;
+  border: 1px solid #006ad7;
   border-radius: 5px;
   font-size: 12pt;
 }
 
 input:hover {
-  background-color: #44b78b;
+  background-color: white;
   color: white;
-  border: 1px solid #44b78b;
+  border: 1px solid #006ad7;
 }
