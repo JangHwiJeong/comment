@@ -78,6 +78,12 @@ footer p {
 
 /* 공통 요소 */
 
+h2 {
+  color: #21277b;
+  font-size: 1rem;
+  align-items: center;
+}
+
 h3 {
   color: #21277b;
   font-size: 2rem;
@@ -118,6 +124,7 @@ h3 {
 }
 
 /* create.html */
+
 #id_title,
 #id_body {
   background-color: none;
@@ -189,3 +196,4 @@ input:hover {
   color: white;
   border: 1px solid #006ad7;
 }
+

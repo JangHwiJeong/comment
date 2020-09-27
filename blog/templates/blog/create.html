@@ -1,7 +1,15 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% block content %}
 
-<form method="post">
+<h1>로그인 후 이용할 수 있습니다.</h1>
+
+{% if request.user.is_authenticated %}
+
+<form method="POST">
   {% csrf_token %} {{form.as_p}}
   <input type="submit" value="등록" />
 </form>
+
+{% endif %}
+
 {% endblock %}

@@ -1,4 +1,19 @@
-{% extends 'base.html' %} {% block content %} {% for post in blogs.all %}
+{% extends 'base.html' %} 
+
+{% block content %} 
+
+{% if request.user.is_authenticated %}
+<h1>환영합니다, {{user.username}}님!</h1>
+
+<a href="javascript:{document.getElementById('logout').submit()}">Logout</a>
+          <form id="logout" method="POST" action="{% url 'logout' %}">
+            {% csrf_token %} <input type="hidden" />
+          </form>
+{% endif %}
+
+{% for post in blogs.all %}
+
+
 <div class="home">
   <br>
   <p class="preview">[미리 보기]</p>
@@ -7,4 +22,5 @@
   <p class="date">{{post.date | date:"Y년 n월 j일 G시 i분" }}</p>
   <br>
 </div>
+
 {% endfor %} {% endblock %}
