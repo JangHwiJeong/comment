@@ -106,3 +106,7 @@ def logout(request):
         auth.logout(request)
         return redirect('home')
     return render(request, 'signup.html')
+
+def map(request):
+    blogs = Blog.objects
+    return render(request, 'blog/map.html', {'blogs': blogs})
